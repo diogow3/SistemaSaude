@@ -25,7 +25,7 @@ CREATE TABLE agendamento (
 	id SERIAL PRIMARY KEY,
 	idPaciente INT REFERENCES paciente(id),
 	idProcedimento INT REFERENCES procedimento(id),
-	datahora VARCHAR(50)
+	datahora TIMESTAMP
 );
 
 INSERT INTO paciente(nome, cartaosus)
