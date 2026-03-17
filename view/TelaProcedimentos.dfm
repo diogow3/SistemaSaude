@@ -29,7 +29,7 @@ object frmTelaProcedimentos: TfrmTelaProcedimentos
     Top = 64
     Width = 689
     Height = 481
-    ActivePage = tsExcluirProcedimento
+    ActivePage = tsProcedimentosCadastrados
     TabOrder = 0
     object tsProcedimentosCadastrados: TTabSheet
       Caption = 'Procedimentos Cadastrados'

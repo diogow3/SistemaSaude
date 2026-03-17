@@ -48,8 +48,9 @@ begin
   end;
 
   try
-    Agendamento.Paciente.Id := cbPaciente.KeyValue;
-    Agendamento.Procedimento.Id := cbProcedimento.KeyValue;
+    Agendamento.PacienteId := cbPaciente.KeyValue;
+    Agendamento.ProcedimentoId := cbProcedimento.KeyValue;
+    Agendamento.DataHora := edtDataHora.Text;
 
     Repositorio := TAgendamentoRepository.Create(dtmdlPrincipal.fdtblagendamento);
     Repositorio.Adicionar(Agendamento);

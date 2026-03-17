@@ -28,8 +28,8 @@ procedure TAgendamentoRepository.Adicionar(Agendamento: TAgendamento);
     FTable.Append;
 
     try
-      FTable.FieldByName('idPaciente').AsInteger := Agendamento.Paciente.Id;
-      FTable.FieldByName('idProcedimento').AsInteger := Agendamento.Procedimento.Id;
+      FTable.FieldByName('idpaciente').AsInteger := Agendamento.PacienteId;
+      FTable.FieldByName('idprocedimento').AsInteger := Agendamento.ProcedimentoId;
       FTable.FieldByName('datahora').AsString := Agendamento.DataHora;
       FTable.Post;
     except

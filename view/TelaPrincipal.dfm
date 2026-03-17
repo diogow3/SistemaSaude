@@ -68,7 +68,7 @@ object frmTelaPrincipal: TfrmTelaPrincipal
     OnClick = btnAgendarClick
   end
   object btnPacientes: TButton
-    Left = 160
+    Left = 143
     Top = 480
     Width = 129
     Height = 73
@@ -77,7 +77,7 @@ object frmTelaPrincipal: TfrmTelaPrincipal
     OnClick = btnPacientesClick
   end
   object btnProcedimentos: TButton
-    Left = 312
+    Left = 278
     Top = 480
     Width = 137
     Height = 73
